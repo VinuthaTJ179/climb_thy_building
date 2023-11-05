@@ -16,7 +16,7 @@ while run == True:
 
     screen.fill((0,0,0))
     pygame.draw.rect(screen,(255,0,0),player)
-
+    #Actions performed based on key pressed(Event handlers)
     key = pygame.key.get_pressed()
     if key[pygame.K_a] == True:
         player.move_ip(-1,0)
