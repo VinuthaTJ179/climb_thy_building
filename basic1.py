@@ -1,6 +1,6 @@
 import pygame
 
-#After importing pygame, it has to be initialized
+#After importing pygame, it has to be initialized, i.e. your game environment has to be setup
 pygame.init()
 
 #To create a window we need width and height
@@ -14,7 +14,7 @@ player = pygame.Rect((300,250,50,50))
 run = True
 while run == True:
 
-    screen.fill((0,0,0))
+    screen.fill((0,0,0))#This is used to refresh the screen, such that it doesn't take history or leave trial
     pygame.draw.rect(screen,(255,0,0),player)
     #Actions performed based on key pressed(Event handlers)
     key = pygame.key.get_pressed()
